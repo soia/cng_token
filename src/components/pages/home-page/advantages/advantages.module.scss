@@ -4,7 +4,7 @@
 .advantages {
     position: relative;
     background: #D8D6ED;
-    padding: 4.7vw 0;
+    padding: 4.7vw 0 8vw;
 
     &__title {
         font-family: $DrukTextWide-Medium;
@@ -57,7 +57,7 @@
         position: absolute;
         width: 16vw;
         height: 16vw;
-        bottom: -12vw;
+        bottom: -9vw;
         right: 7vw;
         z-index: 10;
     }

@@ -1,0 +1,83 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.workPrinciples {
+    background: $blueGradient;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52vw;
+
+    &__title {
+        font-family: $DrukTextWide-Medium;
+        font-size: $desctop48px;
+        color: $white;
+        margin-bottom: 4.70vw;
+    }
+
+    &__wrapper {
+        padding: 4.18vw 12.70vw 7.32vw 46vw;
+    }
+
+    &__buttonWrapper {
+        display: flex;
+        align-items: center;
+
+        &_icons {
+            width: 5vw;
+        }
+
+        &_text {
+            font-family: $CoreSansGRegular;
+            font-size: $desctop24px;
+            line-height: $desctop30px;
+            color: #F77723;
+            margin: 0 $desctop60px 0 $desctop24px;;
+        }
+    }
+
+    &__getStartde {
+        font-family: $DrukTextWide-Bold;
+        border: none;
+        background-color: transparent;
+        min-width: 11.6vw;
+        width: fit-content;
+        height: $desctop48px;
+        outline: none;
+        cursor: pointer;
+        font-size: $desctop12px;
+        line-height: $desctop12px;
+        text-align: center;
+        letter-spacing: $desctop1px;
+        text-transform: uppercase;
+        color: $white;
+        margin-right: $desctop68px;
+    }
+
+    &__stepsWrapper {
+
+        &_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4.44vw;
+
+            &:last-child {
+                margin-bottom: $desctop60px;
+            }
+
+            svg {
+                min-width: $desctop100px;
+                width: 5.21vw;
+                height: $desctop48px;
+                margin-right: $desctop21px;
+            }
+
+            p {
+                font-family: $CoreSansGRegular;
+                font-size: $desctop24px;
+                line-height: $desctop40px;
+                color: $white;
+            }
+        }
+    }
+}

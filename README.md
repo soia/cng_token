@@ -1,4 +1,4 @@
-## 2AB2 - Front-end
+## CNG TOKEN - Front-end
 
 
 ## Start developing in local environment

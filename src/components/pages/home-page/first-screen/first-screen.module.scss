@@ -75,7 +75,7 @@
             font-family: $DrukTextWide-Bold;
             border: none;
             background-color: transparent;
-            min-width: $desctop220px;
+            min-width: 11.6vw;
             width: fit-content;
             height: $desctop48px;
             outline: none;
@@ -83,7 +83,7 @@
             font-size: $desctop12px;
             line-height: $desctop12px;
             text-align: center;
-            letter-spacing: 1px;
+            letter-spacing: $desctop1px;
             text-transform: uppercase;
             color: $white;
         }

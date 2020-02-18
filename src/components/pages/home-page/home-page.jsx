@@ -1,24 +1,17 @@
 import React, { Fragment } from 'react';
 import FirstScreen from './first-screen';
 import Advantages from './advantages';
+import WorkPrinciples from './work-principles';
 import Referals from './referals';
 import AirDrop from './airDrop';
-// import HowToStart from './how-to-start';
-// import Questions from './questions';
-// import Orders from './orders/orders-container';
 
 const HomePage = () => (
     <Fragment>
         <FirstScreen />
         <Advantages />
+        <WorkPrinciples />
         <Referals />
         <AirDrop />
-        {/*
-        <WorkWith />
-        <Orders />
-        <HowToStart />
-        <Questions />
-        */ }
     </Fragment>
 );
 
