@@ -1,0 +1,143 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.firstScreen {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $desctop245px;
+    height: calc(100vh - 6.36vw);
+    min-height: calc(100vh - 6.36vw);
+    background: $blueGradient;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media only screen and (max-width: 499px) {
+        min-height: 100%;
+        height: initial;
+    }
+
+    &__leftSide {
+        width: 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &_accountsWrapper {
+            display: flex;
+            align-items: center;
+            margin-top: $desctop120px;
+            cursor: pointer;
+        }
+
+        &_title {
+            font-family: $CoreSansGRegular;
+            margin-bottom: 1.2vw;
+            font-size: $desctop48px;
+            line-height: $desctop60px;
+
+
+            &:first-child {
+                span {
+                    color: #95FCFD;
+                }
+            }
+
+            span {
+                color: $white;
+            }
+        }
+
+        &_play {
+            width: $desctop60px;
+            height: $desctop60px;
+            margin: 0 $desctop24px 0 $desctop55px;
+        }
+
+        &_accounts {
+            width: 14.5vw;
+        }
+
+        &_titleWrapper {
+            display: flex;
+        }
+
+        &_subtitle, {
+            font-family: $CoreSansGRegular;
+            color: $white;
+            font-size: $desctop24px;
+            line-height: $desctop45px;
+            width: 80%;
+        }
+
+        &_btn {
+            font-family: $DrukTextWide-Bold;
+            border: none;
+            background-color: transparent;
+            min-width: $desctop220px;
+            width: fit-content;
+            height: $desctop48px;
+            outline: none;
+            cursor: pointer;
+            font-size: $desctop12px;
+            line-height: $desctop12px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+
+    &__scrollDown {
+        width: fit-content;
+        width: -moz-max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        bottom: $desctop75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $DrukTextWide-Medium;
+        font-size: $desctop14px;
+        line-height: $desctop14px;
+        text-align: center;
+        letter-spacing: $desctop2px;
+        color: #928DBD;
+        text-transform: uppercase;
+
+        .firstScreen__scrollDown_arrowDown {
+            animation-name: bounce;
+        }
+
+        &_arrowDown {
+            width: $desctop48px;
+            height: $desctop75px;
+            animation-duration: 1.7s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            margin-bottom: $desctop20px;
+        }
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}

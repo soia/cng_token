@@ -1,0 +1,154 @@
+@import '../../assets/styles/variables';
+
+.footer {
+    position: relative;
+    display: flex;
+    background: #211B52;
+    padding: 3.87vw 12.18vw 3.39vw 12.70vw;
+
+    &_coins {
+        position: absolute;
+        width: 20.92vw;
+        height: 20.92vw;
+        top: -9vw;
+        left: 44vw;
+    }
+
+    &__logo {
+        font-family: $DrukTextWide-Medium;
+        font-size: $desctop25px;
+        line-height: $desctop25px;
+        text-align: center;
+        letter-spacing: $desctop2px;
+        text-transform: uppercase;
+        color: $white;
+        width: max-content;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+
+        &_content {
+            font-family: $CoreSansGRegular;
+            font-size: $desctop20px;
+            color: $white;
+            margin: auto 0 1vw 0;
+            width: max-content
+        }
+
+        &_symbol {
+            margin: 0 0.4vw;
+        }
+    }
+
+    &__about,
+    &__support,
+    &__services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: $desctop30px;
+        font-family: $DrukTextWide-Bold;
+        font-size: $desctop20px;
+        line-height: $desctop20px;
+        color: #D8D6ED;
+    }
+
+    &__linksWrapper {
+        display: flex;
+        margin-left: 13vw;
+
+        div {
+            &:not(last-child) {
+                margin-right: 10vw;
+            }
+        }
+    }
+
+    &__links {
+        font-family: $CoreSansGRegular;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+        text-align: left;
+        white-space: nowrap;
+        font-size: $desctop21px;
+        line-height: $desctop60px;
+        color: #928DBD;
+
+        &:hover {
+            color: #6EFFFF;
+        }
+    }
+}
+
+.footerPersonalArea {
+    position: relative;
+    padding: 0 7.85vw 0 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $cabinerBackColor;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 86.3vw;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    &__leftSide {
+        margin-right: 8vw;
+    }
+
+    &__leftSide,
+    &__rightSide {
+        display: flex;
+        align-items: center;
+
+        &_links {
+            font-family: $CoreSansGRegular;
+            color: $textDarkLight;
+            font-size: 0.8vw;
+            line-height: 1.7vw;
+
+            &:hover {
+                transition: 0.25s;
+                color: $greenLight;
+            }
+
+            &:not(:last-child) {
+                margin-right: 7vw;
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 1.85vw 0 1.85vw 2.9vw;
+        margin-right: 3.85vw;
+        width: 13.7vw;
+        background: #f3f7fd;
+        font-family: $CoreSansGRegular;
+        color: $textDarkLight;
+        font-size: 0.8vw;
+        line-height: 0.8vw;
+
+        &_symbol {
+            margin: 0 0.4vw;
+        }
+
+        &_p2p {
+            font-family: $DrukTextWide-Bold;
+        }
+    }
+}

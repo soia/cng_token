@@ -1,0 +1,29 @@
+{
+    "header": {
+        "about": "About",
+        "contact": "Contacts",
+        "signIn": "Sign in",
+        "registration": "Registration"
+    },
+    "footer": {
+        "info": "Info",
+        "aboutUs": "About Us",
+        "faq": "FAQ",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "support": "Support",
+        "contact": "Contact",
+        "extension": "Extension",
+        "orders": "Orders",
+        "services": "Services",
+        "personalArea": "Personal area",
+        "fees": "Fees"
+    },
+    "firstScreen": {
+        "title": "Game token",
+        "subtitle": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "beginToPlay": "Begin to play",
+        "scrollDown": "Scroll down"
+    },
+    "pageNotFound": "Page not found"
+}

@@ -1,0 +1,73 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.airDrop {
+    background-color: $blueGradient;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30.94vw;
+
+    &__title {
+        padding: $desctop100px 0 $desctop65px 0;
+        font-family: $DrukTextWide-Bold;
+        font-size: $desctop48px;
+        line-height: $desctop48px;
+        text-align: center;
+        color: #2C3769;
+        max-width: 51%;
+        margin: 0 auto;
+    }
+
+    &__referalWrapper {
+        max-width: 36%;
+        margin: 0 auto;
+
+        &_title {
+            font-family: $CoreSansGRegular;
+            font-size: $desctop14px;
+            line-height: $desctop14px;
+            letter-spacing: $desctop2px;
+            text-transform: uppercase;
+            color: #2C3769;
+            margin: 0 0 $desctop10px 1.1vw;
+        }
+    }
+
+    &__referalField {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 37.76vw;
+        height: 4.4vw;
+
+        &_link {
+            margin-left: 7vw;
+            font-family: $CoreSansGRegular;
+            font-size: $desctop20px;
+            line-height: $desctop20px;
+            color: #2C3769;
+        }
+
+        &_copy {
+            font-family: $DrukTextWide-Bold;
+            border: none;
+            background: transparent;
+            width: $desctop100px;
+            height: $desctop48px;
+            outline: none;
+            cursor: pointer;
+            font-size: $desctop12px;
+            line-height: $desctop12px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #2C3769;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 2vw;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../assets/styles/variables';
+
+.animationLogo,
+.animationNav ul li,
+.animationButtons,
+.animationButtons button,
+.animationButtons div {
+    transform: translateY(-100px);
+    transition: transform 0.5s;
+
+    @media only screen and (max-width: 1024px) {
+        transform: translateY(0);
+    }
+}
+
+.domLoaded .animationLogo,
+.domLoaded .animationNav ul li,
+.domLoaded .animationButtons,
+.domLoaded .animationButtons button,
+.domLoaded .animationButtons div {
+    transform: translateY(0);
+}
+
+.animationNav ul li {
+    &:nth-child(1) {
+        transition-delay: 0.15s;
+    }
+
+    &:nth-child(2) {
+        transition-delay: 0.3s;
+    }
+
+    &:nth-child(3) {
+        transition-delay: 0.45s;
+    }
+}
+
+.animationLogo {
+    transition-delay: 0.6s;
+}
+
+
+.animationButtons {
+    button {
+        &:nth-child(1) {
+            transition-delay: 0.75s;
+        }
+
+        &:nth-child(2) {
+            transition: transform 0.5s ease-in-out 0.9s;
+        }
+    }
+}
