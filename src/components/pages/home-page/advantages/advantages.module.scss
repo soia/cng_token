@@ -22,7 +22,7 @@
         &_item {
             padding: $desctop40px $desctop55px;
             width: 22.17vw;
-            background: #D2D1E7;
+            background-color: rgba(184, 182, 207, 0.1);
             border-radius: $desctop8px;
             transition: all 0.25s;
 
@@ -34,7 +34,6 @@
                 .advantages__wrapper_content {
                     color: $white;
                 }
-
             }
         }
 
