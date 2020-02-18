@@ -49,7 +49,7 @@ export class FirstScreen extends PureComponent {
                                 <div className={style.firstScreen__leftSide_title}>
                                     <TextTruncate
                                         line={2}
-                                        element="p"
+                                        element="div"
                                         truncateText="…"
                                         text={t('firstScreen.title')}
                                     />
