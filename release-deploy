@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+// eslint-disable-next-line
+const Deployer = require('ssh-deploy-release');
+
+const options = {
+    localPath: 'build',
+    host: 'cng.casino',
+    username: 'front-dev-2',
+    // eslint-disable-next-line
+    password: require('./keys').sshKey,
+    deployPath: '/home/front-dev-2',
+    port: '22001',
+    releasesToKeep: 3,
+    currentReleaseLink: 'cng.casino',
+};
+
+const deployer = new Deployer(options);
+deployer.deployRelease(() => {
+    // console.log('Ok !')
+});
