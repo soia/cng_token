@@ -13,6 +13,7 @@ const options = {
     port: '22001',
     releasesToKeep: 3,
     currentReleaseLink: 'cng.casino',
+    onBeforeLink: context => `chmod -R g+rx ${context.release.path}`,
 };
 
 const deployer = new Deployer(options);
