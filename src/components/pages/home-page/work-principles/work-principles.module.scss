@@ -9,12 +9,17 @@
     height: 52vw;
 
     @media only screen and (max-width: 767px) {
-        padding: 10.8vw 12.15vw 20vw;
         height: auto;
     }
 
     &__icon {
         display: none;
+
+        @media only screen and (max-width: 767px) {
+            width: 90.45vw;
+            height: 81vw;
+            display: flex;
+        }
     }
 
     &__title {
@@ -34,7 +39,7 @@
         padding: 4.18vw 12.70vw 7.32vw 46vw;
 
         @media only screen and (max-width: 767px) {
-            padding: 0;
+            padding: 0 12.15vw 20vw;
         }
     }
 

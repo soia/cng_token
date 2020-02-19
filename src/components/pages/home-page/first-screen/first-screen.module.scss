@@ -4,7 +4,6 @@
 .firstScreen {
     display: flex;
     justify-content: space-between;
-    padding: 0 $desctop245px;
     height: calc(100vh - 4.24vw);
     min-height: calc(100vh - 4.24vw);
     background: $blueGradient;
@@ -12,11 +11,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0 $desctop245px;
 
     @media only screen and (max-width: 767px) {
         min-height: auto;
         height: initial;
         flex-direction: column;
+        padding: 0;
     }
 
     &__icon {
@@ -25,7 +26,8 @@
         @media only screen and (max-width: 767px) {
             width: 90.45vw;
             height: 81vw;
-            display: none;
+            display: flex;
+            margin-top: 5vw;
         }
     }
 
@@ -39,6 +41,7 @@
         @media only screen and (max-width: 767px) {
             width: 100%;
             max-width: 100%;
+            padding: 0 12.15vw;
         }
 
         &_accountsWrapper {
@@ -94,7 +97,7 @@
             display: flex;
 
             @media only screen and (max-width: 767px) {
-                margin-top: 18vw;
+                margin-top: 6vw;
             }
         }
 
