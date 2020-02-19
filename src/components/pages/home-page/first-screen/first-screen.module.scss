@@ -5,16 +5,28 @@
     display: flex;
     justify-content: space-between;
     padding: 0 $desctop245px;
-    height: calc(100vh - 6.36vw);
-    min-height: calc(100vh - 6.36vw);
+    height: calc(100vh - 4.24vw);
+    min-height: calc(100vh - 4.24vw);
     background: $blueGradient;
+    background-color: #251B7B;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media only screen and (max-width: 499px) {
-        min-height: 50vh;
+    @media only screen and (max-width: 767px) {
+        min-height: auto;
         height: initial;
+        flex-direction: column;
+    }
+
+    &__icon {
+        display: none;
+
+        @media only screen and (max-width: 767px) {
+            width: 90.45vw;
+            height: 81vw;
+            display: none;
+        }
     }
 
     &__leftSide {
@@ -24,19 +36,30 @@
         flex-direction: column;
         justify-content: center;
 
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+        }
+
         &_accountsWrapper {
             display: flex;
             align-items: center;
-            margin-top: $desctop120px;
+            margin-top: $desctop45px;
             cursor: pointer;
         }
 
         &_title {
-            font-family: $CoreSansGRegular;
+            font-family: $DrukTextWide-Medium;
             margin-bottom: 1.2vw;
             font-size: $desctop48px;
             line-height: $desctop60px;
 
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 1.2vw;
+                font-size: 6.48vw;
+                line-height: 6.48vw;
+                white-space: nowrap;
+            }
 
             &:first-child {
                 span {
@@ -53,14 +76,26 @@
             width: $desctop60px;
             height: $desctop60px;
             margin: 0 $desctop24px 0 $desctop55px;
+
+            @media only screen and (max-width: 767px) {
+              display: none;
+            }
         }
 
         &_accounts {
             width: 14.5vw;
+
+            @media only screen and (max-width: 767px) {
+                display: none;
+            }
         }
 
         &_titleWrapper {
             display: flex;
+
+            @media only screen and (max-width: 767px) {
+                margin-top: 18vw;
+            }
         }
 
         &_subtitle, {
@@ -69,6 +104,13 @@
             font-size: $desctop24px;
             line-height: $desctop45px;
             width: 80%;
+
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                font-size: 4.32vw;
+                line-height: 9.72vw;
+                margin-bottom: 9.72vw;
+            }
         }
 
         &_btn {
@@ -86,6 +128,16 @@
             letter-spacing: $desctop1px;
             text-transform: uppercase;
             color: $white;
+
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                height: 16.2vw;
+                font-size: 3.24vw;
+                line-height: 3.24vw;
+                letter-spacing: 0.27vw;
+                margin-bottom: 16.2vw;
+            }
+
         }
     }
 
@@ -107,6 +159,10 @@
         letter-spacing: $desctop2px;
         color: #928DBD;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
 
         .firstScreen__scrollDown_arrowDown {
             animation-name: bounce;

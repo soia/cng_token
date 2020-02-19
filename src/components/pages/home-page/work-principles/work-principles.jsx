@@ -1,16 +1,20 @@
 import React, { Fragment } from 'react';
 import ReactWOW from 'react-wow';
 import { message } from 'antd';
+import { useTranslation } from 'react-i18next';
 
 import Button from '../../../small-components/button';
 import orangeButton from '../../../assets/images/orangeButton.svg';
 import workPrinciplesBg from './images/workPrinciplesBg.svg';
 import workPrinciplesIcon1 from './images/workPrinciplesIcon1.svg';
 import workPrinciplesIcon2 from './images/workPrinciplesIcon2.svg';
+import principleWorkIcon from './images/principleWorkIcon.svg';
 
 import style from './work-principles.module.scss';
 
 const WorkPrinciples = () => {
+    const { t } = useTranslation();
+
     const workPrinciplesBgStyle = {
         backgroundImage: `url(${workPrinciplesBg})`,
     };
@@ -26,11 +30,23 @@ const WorkPrinciples = () => {
 
     return (
         <Fragment>
-            <div className={style.workPrinciples} style={workPrinciplesBgStyle}>
-
+            <div
+                className={style.workPrinciples}
+                style={window.innerWidth > 767 ? workPrinciplesBgStyle : null}
+                id="principleOfWork"
+            >
+                <ReactWOW animation="fadeInUp" delay="0.05s">
+                    <img
+                        className={style.workPrinciples__icon}
+                        src={principleWorkIcon}
+                        alt="principleWorkIcon"
+                    />
+                </ReactWOW>
                 <div className={style.workPrinciples__wrapper}>
                     <ReactWOW animation="fadeInUp" delay="0.05s">
-                        <h3 className={style.workPrinciples__title}>Принцип работы</h3>
+                        <h3 className={style.workPrinciples__title}>
+                            {t('principleOfWork.title')}
+                        </h3>
                     </ReactWOW>
                     <div className={style.workPrinciples__stepsWrapper}>
                         <ReactWOW animation="fadeInUp" delay="0.05s">
@@ -58,10 +74,7 @@ const WorkPrinciples = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p>
-                                    CNGame Casino будет работать исключительно на токене
-                                    CNG, игроки смогут играть используя токен CNG.{' '}
-                                </p>
+                                <p>{t('principleOfWork.content1')}</p>
                             </div>
                         </ReactWOW>
                         <ReactWOW animation="fadeInUp" delay="0.05s">
@@ -89,10 +102,7 @@ const WorkPrinciples = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p>
-                                    Все токены CNG будут реализованы по средствам AirDrop
-                                    и реферальной программы на крипто-бирже Coinsbit.
-                                </p>
+                                <p>{t('principleOfWork.content2')}</p>
                             </div>
                         </ReactWOW>
                         <ReactWOW animation="fadeInUp" delay="0.05s">
@@ -120,12 +130,7 @@ const WorkPrinciples = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p>
-                                    Пользователи получившие эти токены смогут играть с их
-                                    помощью на CNGame Casino или продать их после
-                                    окончания реализации токенов CNG на криптовалютной
-                                    бирже Coinsbit.
-                                </p>
+                                <p>{t('principleOfWork.content3')}</p>
                             </div>
                         </ReactWOW>
                     </div>
@@ -137,24 +142,48 @@ const WorkPrinciples = () => {
                                 type="button"
                                 className={style.workPrinciples__getStartde}
                             >
-                                Начать
+                                {t('principleOfWork.begin')}
                             </Button>
-                            <img
-                                className={style.workPrinciples__buttonWrapper_icons}
-                                src={workPrinciplesIcon1}
-                                alt="workPrinciplesIcon1"
-                            />
-                            <p className={style.workPrinciples__buttonWrapper_text}>
-                                Быстрые <br /> Выплаты
-                            </p>
-                            <img
-                                className={style.workPrinciples__buttonWrapper_icons}
-                                src={workPrinciplesIcon2}
-                                alt="workPrinciplesIcon2"
-                            />
-                            <p className={style.workPrinciples__buttonWrapper_text}>
-                                Полностью <br /> Безопасно
-                            </p>
+                            <div
+                                className={
+                                    style.workPrinciples__buttonWrapper_iconsWrapper
+                                }
+                            >
+                                <div>
+                                    <img
+                                        className={
+                                            style.workPrinciples__buttonWrapper_icons
+                                        }
+                                        src={workPrinciplesIcon1}
+                                        alt="workPrinciplesIcon1"
+                                    />
+                                    <p
+                                        className={
+                                            style.workPrinciples__buttonWrapper_text
+                                        }
+                                    >
+                                        {t('principleOfWork.quick')} <br />{' '}
+                                        {t('principleOfWork.payouts')}
+                                    </p>
+                                </div>
+                                <div>
+                                    <img
+                                        className={
+                                            style.workPrinciples__buttonWrapper_icons
+                                        }
+                                        src={workPrinciplesIcon2}
+                                        alt="workPrinciplesIcon2"
+                                    />
+                                    <p
+                                        className={
+                                            style.workPrinciples__buttonWrapper_text
+                                        }
+                                    >
+                                        {t('principleOfWork.completely')} <br />{' '}
+                                        {t('principleOfWork.safe')}
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </ReactWOW>
                 </div>

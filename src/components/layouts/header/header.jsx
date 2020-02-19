@@ -3,13 +3,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { message } from 'antd';
 
-import orangeButton from '../../assets/images/orangeButton.svg';
-import transparentButton from '../../assets/images/transparentButton.svg';
+import SelectLanguage from '../../language';
 
 import { compose } from '../../../utils';
-import Button from '../../small-components/button';
 import style from './header.module.scss';
 import 'antd/dist/antd.css';
 import './header.scss';
@@ -34,60 +33,40 @@ export class Header extends Component {
     render() {
         const { t } = this.props;
 
-        const orangeButtonStyle = {
-            backgroundImage: `url(${orangeButton})`,
-            backgroundSize: 'cover',
-        };
-
-        const transparentButtonStyle = {
-            backgroundImage: `url(${transparentButton})`,
-            backgroundSize: 'cover',
-        };
-
         return (
             <header className={style.header}>
-                <div className={style.header__leftSide}>
-                    <nav className={style.header__nav}>
-                        <div className="animationNav">
-                            <ul className={style.header__nav_list}>
-                                <li>
-                                    <Link to="/">
-                                        {t('header.about')}
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/">CNG</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">{t('header.contact')}</Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
                 <div className="animationLogo">
                     <Link to="/" className={style.header__logo}>
                         CNG tokens
                     </Link>
                 </div>
+                <div className={style.header__leftSide}>
+                    <nav className={style.header__nav}>
+                        <div className="animationNav">
+                            <ul className={style.header__nav_list}>
+                                <li>
+                                    <AnchorLink href="#advantages">
+                                        {t('advantages.title')}
+                                    </AnchorLink>
+                                </li>
+                                <li>
+                                    <AnchorLink href="#principleOfWork">
+                                        {t('principleOfWork.principleOfWork')}
+                                    </AnchorLink>
+                                </li>
+                                <li>
+                                    <AnchorLink href="#CNG">CNG</AnchorLink>
+                                </li>
+                                <li>
+                                    <AnchorLink href="#referralProgram">{t('referals.referralProgram')}</AnchorLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
                 <div className={style.header__rightSide}>
                     <div className="animationButtons">
-                        <Button
-                            style={transparentButtonStyle}
-                            onClick={this.openLogin}
-                            type="button"
-                            className={style.header__login}
-                        >
-                            {t('header.signIn')}
-                        </Button>
-                        <Button
-                            style={orangeButtonStyle}
-                            onClick={this.openSignUp}
-                            type="button"
-                            className={style.header__signUp}
-                        >
-                            {t('header.registration')}
-                        </Button>
+                        <SelectLanguage />
                     </div>
                 </div>
             </header>

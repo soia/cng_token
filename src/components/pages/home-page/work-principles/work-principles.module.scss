@@ -8,23 +8,60 @@
     background-size: cover;
     height: 52vw;
 
+    @media only screen and (max-width: 767px) {
+        padding: 10.8vw 12.15vw 20vw;
+        height: auto;
+    }
+
+    &__icon {
+        display: none;
+    }
+
     &__title {
         font-family: $DrukTextWide-Medium;
         font-size: $desctop48px;
         color: $white;
         margin-bottom: 4.70vw;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 6.48vw;
+            line-height: 9.18vw;
+            margin-bottom: 10.8vw;
+        }
     }
 
     &__wrapper {
         padding: 4.18vw 12.70vw 7.32vw 46vw;
+
+        @media only screen and (max-width: 767px) {
+            padding: 0;
+        }
     }
 
     &__buttonWrapper {
         display: flex;
         align-items: center;
 
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+
         &_icons {
             width: 5vw;
+
+            @media only screen and (max-width: 767px) {
+                width: 21.6vw;
+            }
+        }
+
+        &_iconsWrapper {
+            display: flex;
+
+            @media only screen and (max-width: 767px) {
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 16.2vw;
+            }
         }
 
         &_text {
@@ -33,6 +70,11 @@
             line-height: $desctop30px;
             color: #F77723;
             margin: 0 $desctop60px 0 $desctop24px;;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 4.32vw;
+                line-height: 9.72vw;
+            }
         }
     }
 
@@ -52,6 +94,16 @@
         text-transform: uppercase;
         color: $white;
         margin-right: $desctop68px;
+
+        @media only screen and (max-width: 767px) {
+            order: 1;
+            width: 100%;
+            height: 16.2vw;
+            font-size: 3.24vw;
+            line-height: 3.24vw;
+            letter-spacing: 0.27vw;
+            margin-bottom: 5.4vw;
+        }
     }
 
     &__stepsWrapper {
@@ -61,8 +113,18 @@
             align-items: center;
             margin-bottom: 4.44vw;
 
+            @media only screen and (max-width: 767px) {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10.8vw;
+            }
+
             &:last-child {
                 margin-bottom: $desctop60px;
+
+                @media only screen and (max-width: 767px) {
+                    margin-bottom: 10.8vw;
+                }
             }
 
             svg {
@@ -70,6 +132,12 @@
                 width: 5.21vw;
                 height: $desctop48px;
                 margin-right: $desctop21px;
+
+                @media only screen and (max-width: 767px) {
+                    width: 20.25vw;
+                    height: 9.72vw;
+                    margin: 0 0 5.34vw 0;
+                }
             }
 
             p {
@@ -77,6 +145,11 @@
                 font-size: $desctop24px;
                 line-height: $desctop40px;
                 color: $white;
+
+                @media only screen and (max-width: 767px) {
+                    font-size: 4.32vw;
+                    line-height: 9.72vw;
+                }
             }
         }
     }

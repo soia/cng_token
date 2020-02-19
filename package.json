@@ -16,6 +16,7 @@
         "react-anchor-link-smooth-scroll": "^1.0.12",
         "react-copy-to-clipboard": "^5.0.1",
         "react-dom": "^16.8.6",
+        "react-flags-select": "^1.1.10",
         "react-i18next": "10.1.2",
         "react-lines-ellipsis": "^0.14.1",
         "react-modal": "^3.10.1",

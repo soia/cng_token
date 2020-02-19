@@ -6,12 +6,22 @@
     background: #D8D6ED;
     padding: 4.7vw 0 8vw;
 
+    @media only screen and (max-width: 767px) {
+        padding: 10.8vw 12.15vw 20vw;
+    }
+
     &__title {
         font-family: $DrukTextWide-Medium;
         font-size: $desctop48px;
         line-height: $desctop48px;
         color: #2C3769;
         text-align: center;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 6.48vw;
+            line-height: 9.18vw;
+            margin-bottom: 8.1vw;
+        }
     }
 
     &__wrapper {
@@ -19,12 +29,30 @@
         display: flex;
         justify-content: space-between;
 
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+            padding: 0;
+        }
+
         &_item {
             padding: $desctop40px $desctop55px;
             width: 22.17vw;
             background-color: rgba(184, 182, 207, 0.1);
             border-radius: $desctop8px;
             transition: all 0.25s;
+
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                padding: 9.45vw;
+                min-height: 135vw;
+                background: linear-gradient(121.47deg, #3023AE 0%, #C86DD7 101.5%);
+                box-shadow: 0px 3.51vw 11.34vw #4A30B5;
+                border-radius: 1.62vw;
+
+                &:not(:last-child) {
+                    margin-bottom: $mobile20px;
+                }
+            }
 
             &:hover {
                 background: linear-gradient(126.84deg, #3023AE 0%, #C86DD7 101.5%);
@@ -41,6 +69,12 @@
             width: $desctop100px;
             height: $desctop100px;
             margin-bottom: $desctop20px;
+
+            @media only screen and (max-width: 767px) {
+                width: 35.91vw;
+                height: 41.85vw;
+                margin-bottom: $desctop20px;
+            }
         }
 
         &_content {
@@ -49,6 +83,12 @@
             line-height: $desctop40px;
             color: #2C3769;
             transition: all 0.25s;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 4.75vw;
+                line-height: 10.8vw;
+                color: $white;
+            }
         }
     }
 
@@ -59,5 +99,12 @@
         bottom: -9vw;
         right: 7vw;
         z-index: 10;
+
+        @media only screen and (max-width: 767px) {
+            width: 35vw;
+            height: 35vw;
+            bottom: -21vw;
+            right: 3vw;
+        }
     }
 }

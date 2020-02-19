@@ -11,6 +11,10 @@
     background: $blueGradient;
     border-bottom: $desctop2px solid rgba(149, 252, 253, 0.1);
 
+    @media only screen and (max-width: 767px) {
+        padding: $mobile30px $mobile42px;
+    }
+
     &__login,
     &__signUp {
         font-family: $DrukTextWide-Bold;
@@ -38,16 +42,27 @@
 
     &__logo {
         font-family: $DrukTextWide-Super;
-        font-size: $desctop30px;
+        font-size: 1vw;
+        margin-right: 2vw;
         line-height: $desctop30px;
         text-align: center;
         letter-spacing: $desctop2px;
         text-transform: uppercase;
         color: $white;
         text-decoration: none;
+
+        @media only screen and (max-width: 767px) {
+            font-size: $mobile18px;
+            line-height: $mobile18px;
+            letter-spacing: 2px;
+        }
     }
 
     &__nav {
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+
         &_list {
             display: flex;
 
@@ -71,5 +86,9 @@
                 }
             }
         }
+    }
+
+    &__rightSide {
+        margin-left: auto;
     }
 }

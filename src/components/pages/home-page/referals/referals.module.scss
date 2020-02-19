@@ -6,12 +6,21 @@
     padding: $desctop100px 0 $desctop120px;
     position: relative;
 
+    @media only screen and (max-width: 767px) {
+        padding: 10.8vw 12.15vw;
+    }
+
     &__title {
         font-family: $DrukTextWide-Medium;
         font-size: $desctop48px;
         line-height: $desctop48px;
         text-align: center;
         color: $white;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 6.48vw;
+            line-height: 9.18vw;
+        }
     }
 
     &__subTitle {
@@ -21,6 +30,12 @@
         color: $white;
         margin-top: $desctop40px;
         text-align: center;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 3.78vw;
+            line-height: 3.78vw;
+            margin: 5vw 0 10vw;
+        }
 
         span {
             color: #F77723;
@@ -34,10 +49,21 @@
         height: 16vw;
         top: -6vw;
         left: 3vw;
+
+        @media only screen and (max-width: 767px) {
+            top: -16vw;
+            left: -4vw;
+            width: 35vw;
+            height: 35vw;
+        }
     }
 
     &__tableWrapper {
         padding: $desctop40px $desctop245px 0;
+
+        @media only screen and (max-width: 767px) {
+            padding: 0;
+        }
 
         &_item {
             display: flex;
@@ -45,8 +71,18 @@
             padding: 1.46vw 7.32vw 1.46vw $desctop60px;
             border-radius: $desctop8px;
 
+            @media only screen and (max-width: 767px) {
+                border-radius: 2.16vw;
+                padding:  9.18vw 10.8vw;
+                flex-wrap: wrap;
+            }
+
             &:not(:last-child) {
                 margin-bottom: $desctop20px;
+
+                @media only screen and (max-width: 767px) {
+                    margin-bottom: $mobile20px;
+                }
             }
 
             &:nth-child(even) {
@@ -60,6 +96,12 @@
             svg {
                 width: $desctop100px;
                 height: $desctop48px;
+
+                @media only screen and (max-width: 767px) {
+                    width: 20.25vw;
+                    height: 9.72vw;
+                    margin-bottom: $mobile20px;
+                }
             }
         }
 
@@ -70,6 +112,11 @@
             text-transform: uppercase;
             color: $white;
             margin-left: $desctop68px;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 3.78vw;
+                line-height: 3.78vw;
+            }
         }
 
         &_price,
@@ -78,10 +125,31 @@
             font-size: $desctop24px;
             color: $white;
             margin-left: auto;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 4.32vw;
+                line-height: 9.72vw;
+            }
+        }
+
+        &_level {
+            @media only screen and (max-width: 767px) {
+                order: 2;
+                margin: 0;
+            }
         }
 
         &_price {
+            @media only screen and (max-width: 767px) {
+                order: 1;
+                margin-bottom: $mobile20px;
+            }
+        }
 
+        &_currency {
+            @media only screen and (max-width: 767px) {
+                order: 3;
+            }
         }
     }
 }

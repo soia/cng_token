@@ -14,6 +14,7 @@ import arrowDown from './images/arrowDown.svg';
 import firstScreenBg from './images/firstScreenBg1.svg';
 import play from './images/play.svg';
 import accounts from './images/accounts.svg';
+import firstScreenIcon from './images/firstScreenIcon.svg';
 
 import style from './first-screen.module.scss';
 
@@ -33,7 +34,17 @@ export class FirstScreen extends PureComponent {
         const playGroup = () => [message.success('Coming Soon!', 2)];
 
         return (
-            <div className={style.firstScreen} style={bgImage}>
+            <div
+                className={style.firstScreen}
+                style={window.innerWidth > 767 ? bgImage : null}
+            >
+                <ReactWOW animation="fadeInUp" delay="0.05s">
+                    <img
+                        className={style.firstScreen__icon}
+                        src={firstScreenIcon}
+                        alt="firstScreenIcon"
+                    />
+                </ReactWOW>
                 <div className={style.firstScreen__leftSide}>
                     <div>
                         <ReactWOW animation="fadeInUp" delay="0.30s">
@@ -43,7 +54,7 @@ export class FirstScreen extends PureComponent {
                                         line={2}
                                         element="h1"
                                         truncateText="…"
-                                        text="CNG."
+                                        text="CNG-"
                                     />
                                 </div>
                                 <div className={style.firstScreen__leftSide_title}>
@@ -60,7 +71,7 @@ export class FirstScreen extends PureComponent {
                             <div>
                                 <div className={style.firstScreen__leftSide_subtitle}>
                                     <TextTruncate
-                                        line={4}
+                                        line={10}
                                         element="div"
                                         truncateText="…"
                                         text={t('firstScreen.subtitle')}

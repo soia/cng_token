@@ -8,7 +8,7 @@
     transform: translateY(-100px);
     transition: transform 0.5s;
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 767px) {
         transform: translateY(0);
     }
 }
@@ -21,33 +21,29 @@
     transform: translateY(0);
 }
 
+.animationLogo {
+    display: flex;
+    transition-delay: 0.15s;
+}
+
 .animationNav ul li {
     &:nth-child(1) {
-        transition-delay: 0.15s;
-    }
-
-    &:nth-child(2) {
         transition-delay: 0.3s;
     }
 
-    &:nth-child(3) {
+    &:nth-child(2) {
         transition-delay: 0.45s;
     }
-}
 
-.animationLogo {
-    transition-delay: 0.6s;
-}
+    &:nth-child(3) {
+        transition-delay: 0.6s;
+    }
 
+    &:nth-child(4) {
+        transition-delay: 0.75s;
+    }
+}
 
 .animationButtons {
-    button {
-        &:nth-child(1) {
-            transition-delay: 0.75s;
-        }
-
-        &:nth-child(2) {
-            transition: transform 0.5s ease-in-out 0.9s;
-        }
-    }
+    transition-delay: 0.9s;
 }

@@ -10,8 +10,6 @@ html {
     height: 100%;
     overflow-y: overlay;
     overflow-x: hidden;
-    min-width: 768px;
-    overflow-x: scroll;
 }
 
 body {
@@ -68,6 +66,10 @@ input:focus::-webkit-input-placeholder {
     color: $greyLight;
     font-size: $desctop16px;
     z-index: 9999999;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 3.5vw;
+    }
 }
 
 // remove input number arrows firefox

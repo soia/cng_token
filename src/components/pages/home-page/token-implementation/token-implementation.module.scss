@@ -6,12 +6,22 @@
     padding: 4.18vw 0 11.19vw;
     position: relative;
 
+    @media only screen and (max-width: 767px) {
+        padding: 10.8vw 12.15vw 20vw;
+    }
+
     &__title {
         font-family: $DrukTextWide-Medium;
         font-size: $desctop48px;
         line-height: $desctop48px;
         text-align: center;
         color: #2C3769;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 6.48vw;
+            line-height: 9.18vw;
+            margin-bottom: 10.8vw;
+        }
     }
 
     &__coin {
@@ -20,6 +30,13 @@
         height: 16vw;
         top: -9vw;
         left: 11vw;
+
+        @media only screen and (max-width: 767px) {
+            width: 35vw;
+            height: 35vw;
+            top: -19vw;
+            left: 32%;
+        }
     }
 
     &__contentWrapper {
@@ -27,6 +44,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+            padding: 0;
+        }
 
         &_item {
             display: flex;
@@ -38,10 +60,24 @@
             background-color: rgba(184, 182, 207, 0.1);
             transition: all 0.25s;
 
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                padding: 10.8vw;
+                min-height: 76.95vw;
+
+                &:not(:last-child) {
+                    margin-bottom: $mobile20px;
+                }
+            }
+
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
                 margin-bottom: 6.01vw;
+
+                @media only screen and (max-width: 767px) {
+                    margin-bottom: $mobile20px;
+                }
             }
 
             svg {
@@ -49,6 +85,12 @@
                 height: $desctop48px;
                 margin-bottom: $desctop30px;
                 transition: all 0.25s;
+
+                @media only screen and (max-width: 767px) {
+                    width: 20.25vw;
+                    height: 9.72vw;
+                    margin-bottom: $mobile20px;
+                }
             }
 
             &:hover {
@@ -82,6 +124,12 @@
             color: #2C3769;
             margin-bottom: $desctop10px;
             white-space: nowrap;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 3.78vw;
+                line-height: 3.78vw;
+                margin-bottom: $desctop10px;
+            }
         }
 
         &_subTitle {
@@ -89,6 +137,11 @@
             font-size: $desctop24px;
             line-height: $desctop45px;
             color: #2C3769;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 4.32vw;
+                line-height: 9.72vw;
+            }
         }
     }
 }
