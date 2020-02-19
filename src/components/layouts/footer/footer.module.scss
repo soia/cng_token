@@ -16,7 +16,7 @@
         width: 20.92vw;
         height: 20.92vw;
         top: -9vw;
-        left: 44vw;
+        left: 41vw;
 
         @media only screen and (max-width: 767px) {
             width: 35vw;
@@ -45,6 +45,18 @@
 
         &:hover {
             color: $white;
+        }
+
+        img {
+            width: 15.32vw;
+            height: 2.03vw;
+            transform: translate(-2.2vw);
+
+            @media only screen and (max-width: 767px) {
+                width: 45vw;
+                height: 8vw;
+                transform: translate(0);
+            }
         }
     }
 
@@ -110,7 +122,7 @@
 
     &__linksWrapper {
         display: flex;
-        margin-left: 13vw;
+        margin-left: 11vw;
 
         @media only screen and (max-width: 767px) {
             margin-left: 0;
@@ -119,7 +131,7 @@
 
         div {
             &:not(last-child) {
-                margin-right: 10vw;
+                margin-right: 6vw;
 
                 @media only screen and (max-width: 767px) {
                     margin: 0 0 10.8vw 0;

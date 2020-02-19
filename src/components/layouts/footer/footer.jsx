@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ReactWOW from 'react-wow';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import logo from '../../assets/images/logo.svg';
 import style from './footer.module.scss';
 import footerCoins from '../../assets/images/footerCoins.svg';
 
@@ -16,7 +18,7 @@ const Footer = () => {
             </ReactWOW>
             <div className={style.footer__copyright}>
                 <Link to="/" className={style.footer__logo}>
-                    CNG tokens
+                    <img src={logo} alt="logo" />
                 </Link>
                 <p className={style.footer__copyright_content}>
                     Copyright
@@ -27,41 +29,42 @@ const Footer = () => {
             <div className={style.footer__linksWrapper}>
                 <div className={style.footer__about}>
                     <h3 className={style.footer__title}>{t('footer.company')}</h3>
-                    <Link to="/" className={style.footer__links}>
+
+                    <AnchorLink href="#CNG" className={style.footer__links}>
                         {t('footer.aboutUs')}
-                    </Link>
-                    <Link to="/" className={style.footer__links}>
+                    </AnchorLink>
+                    <AnchorLink href="#advantages" className={style.footer__links}>
                         {t('footer.benefits')}
-                    </Link>
-                    <Link to="/" className={style.footer__links}>
+                    </AnchorLink>
+                    <AnchorLink href="#header" className={style.footer__links}>
                         {t('footer.gameToken')}
-                    </Link>
-                    <Link to="/" className={style.footer__links}>
+                    </AnchorLink>
+                    <AnchorLink href="#principleOfWork" className={style.footer__links}>
                         {t('footer.principleOfOperation')}
-                    </Link>
-                    <Link to="/" className={style.footer__links}>
+                    </AnchorLink>
+                    <AnchorLink href="#referralProgram" className={style.footer__links}>
                         {t('footer.tokenImplementation')}
-                    </Link>
+                    </AnchorLink>
                 </div>
                 <div className={style.footer__support}>
                     <h3 className={style.footer__title}>{t('footer.support')}</h3>
                     <Link to="/" className={style.footer__links}>
-                        {t('footer.faq')}
+                        {t('footer.faq')} (Coming soon)
                     </Link>
                     <Link to="/" className={style.footer__links}>
-                        {t('footer.privacyPolice')}
+                        {t('footer.privacyPolice')} (Coming soon)
                     </Link>
                 </div>
                 <div className={style.footer__services}>
                     <h3 className={style.footer__title}> {t('footer.helpCenter')}</h3>
                     <Link to="/" className={style.footer__links}>
-                        Facebook
+                        Facebook (Coming soon)
                     </Link>
                     <Link to="/" className={style.footer__links}>
-                        YouTube
+                        YouTube (Coming soon)
                     </Link>
                     <Link to="/" className={style.footer__links}>
-                        Instagram
+                        Instagram (Coming soon)
                     </Link>
                 </div>
             </div>

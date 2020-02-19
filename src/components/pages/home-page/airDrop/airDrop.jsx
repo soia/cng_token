@@ -51,10 +51,11 @@ const AirDrop = () => {
                             style={referalWrapperStyle}
                         >
                             <p className={style.airDrop__referalField_link}>
-                                https://coinsbit.io
+                                https://coinsbit.io/settings/referral-program
                             </p>
                             <CopyToClipboard
-                                text="https://coinsbit.io"
+                                text="https://coinsbit.io/settings/referral-program
+                                "
                                 onCopy={() => copied()}
                             >
                                 <Button

@@ -8,6 +8,7 @@ import { message } from 'antd';
 
 import SelectLanguage from '../../language';
 
+import logo from '../../assets/images/logo.svg';
 import { compose } from '../../../utils';
 import style from './header.module.scss';
 import 'antd/dist/antd.css';
@@ -34,10 +35,10 @@ export class Header extends Component {
         const { t } = this.props;
 
         return (
-            <header className={style.header}>
+            <header className={style.header} id="header">
                 <div className="animationLogo">
                     <Link to="/" className={style.header__logo}>
-                        CNG tokens
+                        <img src={logo} alt="logo" />
                     </Link>
                 </div>
                 <div className={style.header__leftSide}>

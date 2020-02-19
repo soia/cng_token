@@ -50,11 +50,22 @@
         text-transform: uppercase;
         color: $white;
         text-decoration: none;
+        margin-right: auto;
 
         @media only screen and (max-width: 767px) {
             font-size: $mobile18px;
             line-height: $mobile18px;
             letter-spacing: 2px;
+        }
+
+        img {
+            width: 15.32vw;
+            height: 2.03vw;
+
+            @media only screen and (max-width: 767px) {
+                width: 45vw;
+                height: 8vw;
+            }
         }
     }
 
@@ -89,6 +100,6 @@
     }
 
     &__rightSide {
-        margin-left: auto;
+        margin-left: 5vw;
     }
 }
