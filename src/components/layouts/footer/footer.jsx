@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ReactWOW from 'react-wow';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { message } from 'antd';
 
 import logo from '../../assets/images/logo.svg';
 import style from './footer.module.scss';
@@ -10,6 +11,10 @@ import footerCoins from '../../assets/images/footerCoins.svg';
 
 const Footer = () => {
     const { t } = useTranslation();
+
+    const comingSoon = () => {
+        message.success('Coming Soon!', 2);
+    };
 
     return (
         <footer className={style.footer}>
@@ -48,28 +53,28 @@ const Footer = () => {
                 </div>
                 <div className={style.footer__support}>
                     <h3 className={style.footer__title}>{t('footer.support')}</h3>
-                    <Link to="/" className={style.footer__links}>
-                        {t('footer.faq')} (Coming soon)
-                    </Link>
-                    <Link to="/" className={style.footer__links}>
-                        {t('footer.privacyPolice')} (Coming soon)
-                    </Link>
+                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                        {t('footer.faq')}
+                    </div>
+                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                        {t('footer.privacyPolice')}
+                    </div>
                 </div>
                 <div className={style.footer__services}>
                     <h3 className={style.footer__title}> {t('footer.helpCenter')}</h3>
-                    <Link to="/" className={style.footer__links}>
-                        Facebook (Coming soon)
-                    </Link>
-                    <Link to="/" className={style.footer__links}>
-                        YouTube (Coming soon)
-                    </Link>
-                    <Link to="/" className={style.footer__links}>
-                        Instagram (Coming soon)
-                    </Link>
+                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                        Facebook
+                    </div>
+                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                        YouTube
+                    </div>
+                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                        Instagram
+                    </div>
                 </div>
             </div>
             <p className={style.footer__copyright_contentMobile}>
-            Copyright
+                Copyright
                 <span className={style.footer__copyright_symbol}>&#169;</span>
                 <span>2020 CNG tokens</span>
             </p>

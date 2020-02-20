@@ -15,8 +15,8 @@
         position: absolute;
         width: 20.92vw;
         height: 20.92vw;
-        top: -9vw;
-        left: 41vw;
+        top: -13vw;
+        left: 39vw;
 
         @media only screen and (max-width: 767px) {
             width: 35vw;
@@ -122,7 +122,7 @@
 
     &__linksWrapper {
         display: flex;
-        margin-left: 11vw;
+        margin-left: 10vw;
 
         @media only screen and (max-width: 767px) {
             margin-left: 0;
@@ -131,7 +131,7 @@
 
         div {
             &:not(last-child) {
-                margin-right: 6vw;
+                margin-right: 5vw;
 
                 @media only screen and (max-width: 767px) {
                     margin: 0 0 10.8vw 0;
@@ -156,6 +156,7 @@
         @media only screen and (max-width: 767px) {
             font-size: $mobile16px;
             line-height: 9.72vw;
+            overflow: hidden;
         }
 
         &:hover {
