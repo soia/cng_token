@@ -64,7 +64,8 @@
         "helpCenter": "Центр поддержки"
     },
     "smartContractAddress": {
-        "title": "Адрес Смарт Контракта"
+        "title": "Адрес Смарт Контракта",
+        "address": "Адрес"
     },
     "error": {
         "title": "Что-то пошло не так."
