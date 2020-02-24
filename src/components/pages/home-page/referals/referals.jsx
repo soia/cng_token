@@ -2,7 +2,7 @@ import React from 'react';
 import ReactWOW from 'react-wow';
 import { useTranslation } from 'react-i18next';
 
-import blueCoin from '../../../assets/images/blueCoin.svg';
+import redCoin from '../../../assets/images/redCoin.svg';
 import style from './referals.module.scss';
 
 const Referals = () => {
@@ -11,7 +11,7 @@ const Referals = () => {
     return (
         <div className={style.referals} id="referralProgram">
             <ReactWOW animation="fadeInUp" delay="0.05s">
-                <img className={style.referals__coin} src={blueCoin} alt="blueCoin" />
+                <img className={style.referals__coin} src={redCoin} alt="redCoin" />
             </ReactWOW>
             <ReactWOW animation="fadeInUp" delay="0.05s">
                 <h3 className={style.referals__title}>

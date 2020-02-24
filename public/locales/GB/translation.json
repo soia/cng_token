@@ -63,6 +63,10 @@
         "privacyPolice": "Privacy police",
         "helpCenter": "Help Center"
     },
+    "smartContractAddress": {
+        "title": "Smart Contract Address",
+        "address": "address"
+    },
     "error": {
         "title": "Something went wrong."
     },

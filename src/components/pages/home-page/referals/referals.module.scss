@@ -48,11 +48,11 @@
         width: 16vw;
         height: 16vw;
         top: -6vw;
-        left: 3vw;
+        right: 6vw;
 
         @media only screen and (max-width: 767px) {
             top: -16vw;
-            left: -4vw;
+            right: 0;
             width: 35vw;
             height: 35vw;
         }

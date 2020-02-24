@@ -53,24 +53,24 @@ const Footer = () => {
                 </div>
                 <div className={style.footer__support}>
                     <h3 className={style.footer__title}>{t('footer.support')}</h3>
-                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                    <span onClick={() => comingSoon()} className={style.footer__links}>
                         {t('footer.faq')}
-                    </div>
-                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                    </span>
+                    <span onClick={() => comingSoon()} className={style.footer__links}>
                         {t('footer.privacyPolice')}
-                    </div>
+                    </span>
                 </div>
                 <div className={style.footer__services}>
                     <h3 className={style.footer__title}> {t('footer.helpCenter')}</h3>
-                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                    <span onClick={() => comingSoon()} className={style.footer__links}>
                         Facebook
-                    </div>
-                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                    </span>
+                    <span onClick={() => comingSoon()} className={style.footer__links}>
                         YouTube
-                    </div>
-                    <div onClick={() => comingSoon()} className={style.footer__links}>
+                    </span>
+                    <span onClick={() => comingSoon()} className={style.footer__links}>
                         Instagram
-                    </div>
+                    </span>
                 </div>
             </div>
             <p className={style.footer__copyright_contentMobile}>

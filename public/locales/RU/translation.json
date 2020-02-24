@@ -63,6 +63,9 @@
         "privacyPolice": "Политика конфиденциальности",
         "helpCenter": "Центр поддержки"
     },
+    "smartContractAddress": {
+        "title": "Адрес Смарт Контракта"
+    },
     "error": {
         "title": "Что-то пошло не так."
     },
