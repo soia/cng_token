@@ -6,10 +6,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ReactWOW from 'react-wow';
 import { message } from 'antd';
 
-import Button from '../../../small-components/button';
-import orangeButton from '../../../assets/images/orangeButton.svg';
 import { compose } from '../../../../utils';
-
+import WP_EN from '../../../assets/WP_EN.pdf';
+import WP_RU from '../../../assets/WP_RU.pdf';
+import orangeButton from '../../../assets/images/orangeButton.svg';
 import arrowDown from './images/arrowDown.svg';
 import firstScreenBg from './images/firstScreenBg1.svg';
 import play from './images/play.svg';
@@ -30,6 +30,8 @@ export class FirstScreen extends PureComponent {
             backgroundImage: `url(${orangeButton})`,
             backgroundSize: 'cover',
         };
+
+        const whitePaper = localStorage.getItem('i18nextLngCngCasion') === 'RU' ? WP_RU : WP_EN;
 
         const playGroup = () => [message.success('Coming Soon!', 2)];
 
@@ -85,13 +87,15 @@ export class FirstScreen extends PureComponent {
                         onClick={() => playGroup()}
                     >
                         <ReactWOW animation="fadeInUp" delay="0.6s">
-                            <Button
+                            <a
+                                href={whitePaper}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 style={orangeButtonStyle}
-                                type="button"
                                 className={style.firstScreen__leftSide_btn}
                             >
-                                {t('firstScreen.beginToPlay')}
-                            </Button>
+                                White Papper
+                            </a>
                             <img
                                 className={style.firstScreen__leftSide_play}
                                 src={play}

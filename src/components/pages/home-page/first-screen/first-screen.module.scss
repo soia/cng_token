@@ -131,6 +131,9 @@
             letter-spacing: $desctop1px;
             text-transform: uppercase;
             color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             @media only screen and (max-width: 767px) {
                 width: 100%;
