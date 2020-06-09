@@ -12,7 +12,6 @@ import WP_RU from '../../../assets/WP_RU.pdf';
 import orangeButton from '../../../assets/images/orangeButton.svg';
 import arrowDown from './images/arrowDown.svg';
 import firstScreenBg from './images/firstScreenBg1.svg';
-import play from './images/play.svg';
 import accounts from './images/accounts.svg';
 import firstScreenIcon from './images/firstScreenIcon.svg';
 
@@ -96,11 +95,6 @@ export class FirstScreen extends PureComponent {
                             >
                                 White Papper
                             </a>
-                            <img
-                                className={style.firstScreen__leftSide_play}
-                                src={play}
-                                alt="play"
-                            />
                             <img
                                 className={style.firstScreen__leftSide_accounts}
                                 src={accounts}
