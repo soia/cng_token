@@ -36,7 +36,9 @@
         "content3": "Подготовка к открытию торгов и начисление токенов.",
         "content4": "Запуск торгов по токену CNG на бирже Coinsbit.",
         "content5": "Интеграция токена на CNGame Casino и подготовка к запуску платформы.",
-        "content6": "Запуск и открытие CNGame Casino."
+        "content6": "Запуск и открытие CNGame Casino.",
+        "september": "Сентябрь",
+        "sept": "Сент."
     },
     "termsOfAirDrop": {
         "title": "CNG Token",

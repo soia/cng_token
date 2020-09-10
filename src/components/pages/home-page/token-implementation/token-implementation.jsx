@@ -228,7 +228,7 @@ const TokenImplementation = () => {
                             </defs>
                         </svg>
                         <p className={style.tokenImplementation__contentWrapper_title}>
-                            10.06.20 - 01.10.20
+                            10.06.20 - {t('tokenImplementation.sept')} 2020
                         </p>
                         <p className={style.tokenImplementation__contentWrapper_subTitle}>
                             {t('tokenImplementation.content5')}
@@ -271,7 +271,7 @@ const TokenImplementation = () => {
                         </svg>
 
                         <p className={style.tokenImplementation__contentWrapper_title}>
-                            01.10.2020
+                            {t('tokenImplementation.september')} 2020
                         </p>
                         <p className={style.tokenImplementation__contentWrapper_subTitle}>
                             {t('tokenImplementation.content6')}
